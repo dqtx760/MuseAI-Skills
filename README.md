@@ -1,7 +1,32 @@
-# MuseAI-Skills
+<p align="center">
+  <img src="./assets/readme/hero.svg" width="100%"
+       alt="MuseAI-Skills：muse.ai 技能文档与 Hatch 运行环境的非官方存档，含 68 个随包技能、40 份权限清单、12 份评测场景">
+</p>
 
-### 🔥🔥🔥🔥没注册Muse的可以用我的邀请码注册，可以获取10亿token！邀请码: E2QE4W
+> [!IMPORTANT]
+> 这是 **muse.ai（Muse AI）** 技能与 Hatch 运行环境的 **非官方存档**，仅供结构阅读与技术分析。
+> **它不是完整源码仓库，也不能一键部署**：核心程序以 Linux x86-64 ELF 二进制提供，构建源码、完整宿主配置与 rootfs 不在快照中。本存档不代表官方发布或认可。
 
+## 快速开始
+
+只想读 68 个技能、跳过约 2GB 的 LFS 二进制？
+
+```bash
+GIT_LFS_SKIP_SMUDGE=1 git clone https://github.com/dqtx760/MuseAI-Skills.git
+cd MuseAI-Skills
+```
+
+打开 `opt/hatch/skills/` 或点击上方目录即可阅读，无需执行任何随包程序。需要二进制时再 `git lfs pull`。
+
+## 如何获取 Muse 使用资格
+
+> 这份存档之外，如果你还没用上 Muse，可参考下面这份注册教程（公众号图文）。
+
+- 📖 **完整教程**：[用 Gemini 完美绕过等候名单，1 分钟注册 Muse](https://mp.weixin.qq.com/s/Fczt9Hyr2fZjNQYC8ur1yA)
+- 🔑 **推荐码 `E2QE4W`**：注册后在 Muse 设置里填入，可获 **10 亿 Muse 词元**。
+- ✨ **要点**：用 Gemini 桌面版 Spark 模式开启远端浏览器访问 muse.ai，使用**全新、未注册过 Muse 的邮箱**注册，按提示验证年龄即可。
+
+## 这是什么
 
 [muse.ai（Muse AI）](https://muse.ai) 的技能文档与 Muse / Hatch 运行环境快照。
 
@@ -9,9 +34,7 @@
 
 **快速导航：**[技能目录](#skills) · [文件结构与作用](#files) · [系统架构](#architecture) · [下载与校验](#download)
 
-本仓库中的 **Muse AI 指 [muse.ai](https://muse.ai)**；这一站点对应关系也见随包的[产品概览](home/hatch/docs/muse.md)。仓库存档了该 Muse / Hatch 个人 AI Agent 环境的部分文件，包括产品说明、技能定义、连接器权限清单、Linux 运行环境脚本，以及随包程序和依赖，供结构阅读与技术分析。
-
-**它不是完整源码仓库，也不是可以一键部署的安装包。** 核心程序主要以 Linux x86-64 ELF 二进制提供；构建源码、完整宿主配置、rootfs 和部分运行资源不在这份快照中。仓库附带的材料自述使用 Muse、Hatch、Jarvis 等名称；本存档不代表官方发布或认可，也未独立验证这些材料的来源与产品声明。
+本仓库中的 **Muse AI 指 [muse.ai](https://muse.ai)**；这一站点对应关系也见随包的[产品概览](home/hatch/docs/muse.md)。仓库存档了该 Muse / Hatch 个人 AI Agent 环境的部分文件，包括产品说明、技能定义、连接器权限清单、Linux 运行环境脚本，以及随包程序和依赖，供结构阅读与技术分析。仓库附带的材料自述使用 Muse、Hatch、Jarvis 等名称；本存档不代表官方发布或认可，也未独立验证这些材料的来源与产品声明。
 
 <a id="skills"></a>
 
@@ -176,7 +199,7 @@
 只想研究这些技能，可以跳过全部 LFS 二进制下载：
 
 ```bash
-GIT_LFS_SKIP_SMUDGE=1 git clone https://github.com/win4r/MuseAI-Skills.git
+GIT_LFS_SKIP_SMUDGE=1 git clone https://github.com/dqtx760/MuseAI-Skills.git
 cd MuseAI-Skills
 ```
 
@@ -460,7 +483,7 @@ flowchart LR
 
 ```bash
 git lfs install
-git clone https://github.com/win4r/MuseAI-Skills.git
+git clone https://github.com/dqtx760/MuseAI-Skills.git
 cd MuseAI-Skills
 git lfs pull
 git lfs fsck
@@ -473,7 +496,7 @@ git lfs fsck
 ### 只阅读文档和脚本
 
 ```bash
-GIT_LFS_SKIP_SMUDGE=1 git clone https://github.com/win4r/MuseAI-Skills.git
+GIT_LFS_SKIP_SMUDGE=1 git clone https://github.com/dqtx760/MuseAI-Skills.git
 cd MuseAI-Skills
 ```
 
@@ -495,7 +518,8 @@ shasum -a 256 --check SHA256SUMS
 
 ## 可运行性与已知缺项
 
-当前快照无法独立启动。不要将 README 中的下载步骤理解为安装或部署步骤。
+> [!WARNING]
+> 当前快照**无法独立启动**，请勿将 README 中的下载步骤理解为安装或部署步骤。
 
 - 核心程序面向 **Linux x86-64**，不能在 macOS 原生运行。
 - 缺少核心源码与完整构建定义，无法重建 daemon 和连接器。
@@ -516,6 +540,7 @@ shasum -a 256 --check SHA256SUMS
 
 ## 版权与许可
 
-这是一份公开存档，**公开可见不等于所有内容获得统一的开源授权**。未为整份快照添加 MIT、Apache 等总许可；原始组件的版权、商标及各自已有的许可保持不变。随包 npm 及依赖的许可证保留在对应目录，例如 [npm LICENSE](opt/hatch-image/bin/npm-package/LICENSE)。
+> [!NOTE]
+> 这是一份公开存档，**公开可见不等于所有内容获得统一的开源授权**。未为整份快照添加 MIT、Apache 等总许可；原始组件的版权、商标及各自已有的许可保持不变。随包 npm 及依赖的许可证保留在对应目录，例如 [npm LICENSE](opt/hatch-image/bin/npm-package/LICENSE)。
 
 这份快照未提供可确认覆盖全部 Muse/Hatch 内容的统一再分发许可证。本仓库不替原权利人授予额外使用、修改或再分发权利；使用者应按具体文件及组件确认适用条款。

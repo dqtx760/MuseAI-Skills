@@ -1,6 +1,6 @@
 # MuseAI-Skills
 
-### 🔥🔥🔥🔥没注册Muse的可以用我的邀请码注册，可以获取10亿token！邀请码: ZLSD3V
+### 🔥🔥🔥🔥没注册Muse的可以用我的邀请码注册，可以获取10亿token！邀请码: E2QE4W
 
 
 [muse.ai（Muse AI）](https://muse.ai) 的技能文档与 Muse / Hatch 运行环境快照。

@@ -23,7 +23,7 @@ cd MuseAI-Skills
 > 这份存档之外，如果你还没用上 Muse，可参考下面这份注册教程（公众号图文）。
 
 - 📖 **完整教程**：[用 Gemini 完美绕过等候名单，1 分钟注册 Muse](https://mp.weixin.qq.com/s/Fczt9Hyr2fZjNQYC8ur1yA)
-- 🔑 **推荐码 `E2QE4W`**：注册后在 Muse 设置里填入，可获 **10 亿 Muse 词元**。
+- 🔑 **推荐码 `3T02ZM`**：注册后在 Muse 设置里填入，可获 **10 亿 Muse 词元**。
 - ✨ **要点**：用 Gemini 桌面版 Spark 模式开启远端浏览器访问 muse.ai，使用**全新、未注册过 Muse 的邮箱**注册，按提示验证年龄即可。
 
 ## 这是什么
